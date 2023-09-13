@@ -1,0 +1,23 @@
+<section class="container" id="with">
+    {% with badge_style='position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark' %}
+    
+    <button type="button" class="btn btn-primary position-relative">
+        Perso
+        <span class='{{ badge_style }}'>
+            32+
+        </span>
+    </button>
+    <button type="button" class="btn btn-warning position-relative">
+        Pro
+        <span class='{{ badge_style }}'>
+            12+
+        </span>
+    </button>
+    <button type="button" class="btn btn-danger position-relative">
+        Privée
+        <span class='{{ badge_style }}'>
+            16+
+        </span>
+    </button>
+    {% endwith %}
+</section>

@@ -1,0 +1,157 @@
+{% extends "hotspot/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!--Main-->
+<main role="main" class="container">
+  <!--Container-->
+  <div class="container" style="max-width:1400px;">
+    <div class="my-3 p-2 bg-white rounded shadow-sm">
+      <div class="text-center m-3">
+        <img src="{% static 'hotspot/img/logo12.png' %}" width="302" height="96" alt="anima night logo"><br>
+        <img src="{% static 'hotspot/img/hotspot_wifi.png' %}" alt="" width="72" height="72"><br>
+        <h6 class="m-3"><a href="/">Accueil</a> - <a href="/wiforama/">Wiforama</a> - <a href="/shazam/">Shazam</a></h6>
+      </div>
+    </div>
+    <form method="post" enctype="multipart/form-data" class="needs-validation">
+      {% csrf_token %}
+      <div class="my-3 p-2 bg-white rounded shadow-sm">
+        <div class="media text-muted pt-3 text-center">
+          <h1 for="uploadimage">Wiforama</h1>
+        </div>
+        <div class="media text-muted pt-3">
+          <p class="media-body pb-2 mb-0 small lh-100 border-bottom border-gray">
+            <label for="fileToUpload" id="file_input_label" class="form-label">Votre image</label>
+            <input type="file" class="form-control-file" name="fileToUpload" id="fileToUpload"
+              aria-describedby="uploadHelp" placeholder="Votre image" required>
+            <small id="uploadHelp" class="form-text text-muted">Préférence image au format paysage.</small>
+          </p>
+        </div>
+        <div class="media text-muted pt-3">
+          <button type="submit" class="btn btn-primary" onclick="upload('{{ request.url }}')">Envoyer</button>
+
+          <button class="btn btn-primary d-none" id="loading_btn" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Chargement
+          </button>
+        
+          <button class="btn btn-secondary d-none" id="cancel_btn" type="button">Annuler</button>
+
+        </div>
+
+        <div id="progress_wrapper" class="d-none">
+          <label id="progress_status">50% chargé</label>
+          <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped active" id="progress" role="progressbar" aria-valuenow="25"
+              area-valuemin="0" area-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div id="alert_wrapper"></div>
+
+        <div class="text-center m-3 py-3 rounded shadow {{ message.class }}">
+          <h6>Nous vous souhaitons une excellente soirée</h6>
+          <h6>{{ message.text }}</h6>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script>
+  var progress = document.getElementById("progress");
+  var progress_wrapper = document.getElementById("progress_wrapper");
+  var progress_status = document.getElementById("progress_status");
+
+  var upload_btn = document.getElementById("upload_btn");
+  var loading_btn = document.getElementById("loading_btn");
+  var cancel_btn = document.getElementById("cancel_btn");
+
+  var input = document.getElementById("fileToUpload");
+  var file_input_label = document.getElementById("file_input_label");
+
+  function show_alert(message, alert){
+    alert_wrapper.innerHTML = `
+        <div class="alert alert-${alert} alert-dismissible fade now" role="alert">
+        <span class="badge badge-secondary">${message}</span>
+        <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      `;
+    };
+
+  function upload(url) {
+    if (!input.value) {
+      show_alert("No file selectec", "warning");
+      return;
+    }
+
+    var data = new FormData();
+
+    var request = new XMLHttpRequest();
+
+    request.responseType = "json";
+
+    alert_wrapper.innerHTML = "";
+
+    upload_btn.classList.add("d-none");
+    loading_btn.classList.remove("d-none");
+    cancel_btn.classList.remove("d-none");
+    progress_wrapper.classList.remove("d-none");
+
+    var file = input.files[0];
+    var filename = file.name;
+    var filesize = file.size;
+    document.cooke = `filesize=${filesize}`;
+    
+    data.append("file", file);
+
+    request.upload.addEventListener("progress", function(e) {
+      var loaded = e.loaded;
+      var total = e.total;
+      var percentage_complete = (loaded / total) * 100;
+
+      progress.setAttribute("style", `width: ${Math.floor(percentage_complete)}%`);
+      progress_status.innerText = `${Math.floor(percentage_complete)}%`;
+
+    })
+
+    request.addEventListener("load", function(e) {
+      if(request.status == 200) {
+        show_alert(`${request.response.message}`, "success");
+      }
+      else {
+        show_alert(`Error uploading file`, "danger")
+      }
+
+      reset();
+    })
+
+    request.addEventListener("error", function(e) {
+      reset();
+      show_alert(`Error uploading file`, "danger")
+    })
+
+    cancel_btn.addEventListener("click", function() {
+      request.abort();
+
+    })
+  } // end upload
+
+
+
+  function reset() {
+    input.value = null;
+    input.disabled = false;
+    cancel_btn.classList.add("d-none");
+    loading_btn.classList.add("d-none");
+    upload_btn.classList.remove("d-none");
+
+    progress_wrapper.classList.add("d-none");
+    progress.setAttribute("style", "width: 0%");
+    
+  }
+</script>
+{% endblock %}

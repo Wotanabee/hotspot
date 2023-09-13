@@ -1,0 +1,31 @@
+{% extends "hotspot/base.html" %}
+
+{% load static %}
+
+{% block content %}
+ <!--Main-->
+ <main role="main" class="container">
+  <!--Container-->
+  <div class="container" style="max-width:1400px;">  
+    <div class="my-3 p-2 bg-white rounded shadow-sm">
+      <div class="text-center m-3">  
+          <img src="{% static 'hotspot/img/logo12.png' %}" width="302" height="96" alt="anima night logo"><br>
+          <img src="{% static 'hotspot/img/hotspot_wifi.png' %}" alt="" width="72" height="72"><br>
+          <h6 class="m-3"><a href="/">Accueil</a> - <a href="/wiforama/">Wiforama</a> - <a href="/shazam/">Shazam</a></h6>
+      </div>
+    </div>
+    <div class="my-3 p-2 bg-white rounded shadow-sm">
+      <div class="media text-muted pt-3 text-center">
+          <h1>Bienvenue sur le Hotspot Anima Night</h1>
+          <h3>Votre selection</h3>
+          <button type="button" class="btn btn-outline-primary position-relative" onclick="window.location.href='/shazam/';" data-toggle="tooltip" data-placement="top" title="<p>Demander le passage d'une musique</p>">Shazam</button>
+          <button type="button" class="btn btn-outline-primary position-relative" onclick="window.location.href='/wiforama/';" data-toggle="tooltip" data-placement="top" title="<p>Poster un moment de cette soirée</p>">Wiforama</button>
+      </div>
+      <div class="text-center m-3 py-3 rounded shadow">
+        <h6>Nous vous souhaitons une excellente soirée</h6>
+        <h6>{{ texte }}</h6>
+      </div>      
+    </div> 
+  </div>
+</main>
+{% endblock %}

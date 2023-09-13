@@ -1,0 +1,55 @@
+{% extends "hotspot/base.html" %}
+
+{% load static %}
+
+{% block metaname%}
+    <meta http-equiv="refresh" content="10">
+{% endblock%}
+
+{% block content %}
+
+  <main role="main" class="container">
+    <!--Container-->
+    <div class="container mt-4" style="max-width:1400px;">
+      <div class="rounded shadow-sm">
+        <div class="text-center mb-12">  
+            <img src="{% static 'hotspot/img/logo12.png' %}" width="302" height="96" alt="anima night logo"><br>
+            <img src="{% static 'hotspot/img/hotspot_wifi.png' %}" alt="" width="72" height="72"><br>
+            <h6>Liste des photos en attente - <a href="/shazam/listing/">Shazam</a></h6>
+            <p id="result_action"></p>
+        </div>
+     <!--Table PlayList-->
+     <table class="table table-striped">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Preview</th>
+                  <th scope="col">Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+            {% for image in images%}
+            <form method="post" enctype="multipart/form-data" class="needs-validation">
+                {% csrf_token %}
+                <tr>
+                    <th scope="row"></th>
+                    <td>{{image|cut:'thumbnail_'}}</td>
+                    <!--<td><img src="{% static 'hotspot/upload/'%}{{image}}"></td>-->
+                    <td><img src="/media/{{ image }}"></td>
+                    <td>
+                        <input type="hidden" name="img" value="{{image|cut:'thumbnail_'}}">
+                        <button class= "btn btn-link btn-outline-primary" data-toggle="tooltip" data-placement="top" title="<h6>Action</h6><p>Valider la photo</p>" name="action" value="valid" type="submit"><img src="{% static 'hotspot/img/valid.png' %}" alt="Valider" width="20" height="20"></button>
+                        <button class= "btn btn-link btn-outline-info" data-toggle="tooltip" data-placement="bottom" title="<h6>Action</h6><p>Tourner vers la gauche</p>" name="action" value="rotate" type="submit"><img src="{% static 'hotspot/img/rotate_left.png' %}" alt="Rotation Left" width="20" height="20"></button>
+                        <button class= "btn btn-link btn-outline-info" data-toggle="tooltip" data-placement="top" title="<h6>Action</h6><p>Tourner vers la droite</p>" name="action" value="rotate" type="submit"><img src="{% static 'hotspot/img/rotate_right.png' %}" alt="Rotation Droite" width="20" height="20"></button>
+                        <button class= "btn btn-link btn-outline-secondary" data-toggle="tooltip" data-placement="bottom" title="<h6>Action</h6><p>Rotation 180°</p>" name="action" value="rotate" type="submit"><img src="{% static 'hotspot/img/rotate_180.png' %}" alt="Rotation 180" width="20" height="20"></button>
+                        <button class= "btn btn-link btn-outline-danger" data-toggle="tooltip" data-placement="top" title="<h6>Action</h6><p>Supprimer la photo</p>" name="action" value="delete" type="submit"><img src="{% static 'hotspot/img/delete.png' %}" alt="Supprimer" width="20" height="20"></button>
+                    </td>
+                </tr>
+            </form>
+            {% endfor %}            
+        </tbody>       
+    </table>
+</main>
+{% endblock %}
