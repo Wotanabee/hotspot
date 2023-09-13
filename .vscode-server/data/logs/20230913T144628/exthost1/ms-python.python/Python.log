@@ -1,0 +1,15 @@
+2023-09-13 14:46:34.431 [info] L’expérience «pythonaacf» est active
+2023-09-13 14:46:34.431 [info] L’expérience «pythonPromptNewFormatterExt» est active
+2023-09-13 14:46:34.431 [info] L’expérience «pythonPromptNewToolsExt» est active
+2023-09-13 14:46:35.875 [info] Test server listening.
+2023-09-13 14:46:35.880 [info] Chemin de l’interpréteur Python : /usr/bin/python3
+2023-09-13 14:46:36.134 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-09-13 14:46:36.135 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-09-13 14:46:36.135 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-09-13 14:46:41.343 [info] Démarrage du serveur de langage Pylance
+2023-09-13 14:49:10.715 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-13 14:49:26.072 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-13 14:49:55.969 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-13 15:00:01.606 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-13 15:00:25.843 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-13 15:00:41.538 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py

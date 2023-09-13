@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Franck, Morgan, Anima Night">
+
+        {% block meta %}{% endblock %}
+        
+        <title>Anima Night - {{  title }}</title>
+        <!--Bootstrap 4.5.2-->
+        <link rel="stylesheet" href="{% static 'shazam/css/bootstrap.min.css'%}">
+        
+        {% block style %}{% endblock %}
+
+        <!--Fontawesome 6-->
+        <script src="https://kit.fontawesome.com/b1d38ac9c9.js" crossorigin="anonymous"></script>
+        <!--/Fontawesome 6 -->       
+        <script src="{% static 'shazam/js/script.js' %}"></script>
+
+        {% block script %}{% endblock %}
+    </head>
+    <body>   
+        {% block content %}{% endblock %}
+    </body>
+
+
+{% include "shazam/footer.html" %}

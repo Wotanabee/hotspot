@@ -1,0 +1,19 @@
+{% load static %}
+        <footer>
+                <p class="text-muted text-center"><small>{% now "d F Y H\hi" %}</small></p>
+                <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2023 Copyright Anima Night</p>
+        </footer>
+        <script src="{% static 'hotspot/js/jquery-3.7.0.min.js' %}"></script>
+        <script src="{% static 'hotspot/js/bootstrap.bundle.min.js' %}"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip({
+                    animation: true,
+                    delay: {show:200, hide:300},
+                    html: true
+                });
+            });
+        </script>
+    </body>
+</html>

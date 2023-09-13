@@ -1,0 +1,25 @@
+{% extends "hotspot/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!--Main-->
+<main role="main" class="container">
+    <!--Container-->
+    <div class="container mt-4" style="max-width:1400px;">
+      <div class="rounded shadow-sm">
+        <div class="text-center mb-12">  
+            <img src="{% static 'shazam/img/logo12.png' %}" width="302" height="96" alt="anima night logo"><br>
+            <img src="{% static 'shazam/img/hotspot_wifi.png' %}" alt="" width="72" height="72"><br>
+        </div>
+      </div>
+    </div>
+    <div class="my-3 p-2 bg-white rounded shadow-sm">
+      <div class="media text-muted pt-3 text-center">
+        <h1>ERREUR 404</h1>
+        <h1>La page que vous demandez n'existe pas.</h1>
+        <h6><a href="{% url 'home' %}" border=0>Retour page d'accueil</a></h6>
+      </div>
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,53 @@
+2023-09-11 21:57:26.246 [info] L’expérience «pythonaacf» est active
+2023-09-11 21:57:26.246 [info] L’expérience «pythonPromptNewFormatterExt» est active
+2023-09-11 21:57:26.246 [info] L’expérience «pythonPromptNewToolsExt» est active
+2023-09-11 21:57:27.606 [info] Test server listening.
+2023-09-11 21:57:27.754 [info] > /usr/bin/python3 -I ~/.vscode-server/extensions/ms-python.python-2023.16.0/pythonFiles/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2023.16.0/pythonFiles/interpreterInfo.py
+2023-09-11 21:57:27.819 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-09-11 21:57:27.819 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-09-11 21:57:27.819 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-09-11 21:57:27.820 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-09-11 21:57:29.901 [info] Chemin de l’interpréteur Python : /usr/bin/python3
+2023-09-11 21:57:32.232 [info] Démarrage du serveur de langage Pylance
+2023-09-11 21:59:46.045 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:01:45.733 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:02:02.551 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:06:25.068 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:07:57.746 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:08:47.956 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/urls.py
+2023-09-11 22:09:40.415 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/urls.py
+2023-09-11 22:10:15.455 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/urls.py
+2023-09-11 22:12:32.889 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/views.py
+2023-09-11 22:12:45.334 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/urls.py
+2023-09-11 22:14:06.368 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:14:54.480 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:17:54.551 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:18:21.135 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:22:19.365 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:22:55.779 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:23:07.622 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:23:36.578 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:23:58.563 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:25:18.784 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:26:19.813 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:27:18.062 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:28:45.142 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:29:14.865 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:29:28.891 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:29:43.541 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:30:26.198 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:30:52.800 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:31:35.989 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:32:30.657 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:33:06.711 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:34:05.549 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:34:55.584 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:36:43.550 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:36:54.925 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/urls.py
+2023-09-11 22:45:19.939 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-11 22:46:53.556 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-11 22:51:55.065 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/wiforama/views.py
+2023-09-11 22:52:58.470 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 22:58:41.095 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 23:03:43.790 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py
+2023-09-11 23:32:52.401 [info] Discover tests for workspace name: hotspot - uri: /home/pi/hotspot/hotspot/settings.py

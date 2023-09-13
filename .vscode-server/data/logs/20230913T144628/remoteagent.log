@@ -1,0 +1,30 @@
+2023-09-13 14:46:28.740 [info] 
+
+
+
+
+2023-09-13 14:46:28.793 [info] Extension host agent started.
+2023-09-13 14:46:29.018 [info] [127.0.0.1][6e47a08c][ExtensionHostConnection] New connection established.
+2023-09-13 14:46:29.021 [info] [127.0.0.1][a7d3422b][ManagementConnection] New connection established.
+2023-09-13 14:46:29.381 [info] [127.0.0.1][6e47a08c][ExtensionHostConnection] <11056> Launched Extension Host Process.
+2023-09-13 14:46:34.515 [info] Getting Manifest... ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:34.516 [info] Getting Manifest... ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:34.628 [info] Installing extension: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:34.636 [info] Extensions is already requested to install ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:38.880 [info] Extension signature is verified: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:39.388 [info] Extracted extension to file:///home/pi/.vscode-server/extensions/ms-ceintl.vscode-language-pack-fr-1.82.2023091309: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:39.404 [info] Renamed to /home/pi/.vscode-server/extensions/ms-ceintl.vscode-language-pack-fr-1.82.2023091309
+2023-09-13 14:46:39.409 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:39.425 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:39.592 [info] Marked extension as uninstalled ms-ceintl.vscode-language-pack-fr-1.82.2023090609
+2023-09-13 14:46:39.767 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:41.375 [info] Downloaded extension to file:///home/pi/.vscode-server/data/CachedExtensionVSIXs/fa6b590d-9eee-4dd2-8f15-46a3e76bab4a
+2023-09-13 14:46:41.385 [info] Installing extension: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:41.386 [info] Installing the extension without checking dependencies and pack ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:41.430 [info] Deleted existing extension from disk ms-ceintl.vscode-language-pack-fr /home/pi/.vscode-server/extensions/ms-ceintl.vscode-language-pack-fr-1.82.2023091309
+2023-09-13 14:46:42.014 [info] Extracted extension to file:///home/pi/.vscode-server/extensions/ms-ceintl.vscode-language-pack-fr-1.82.2023091309: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:42.050 [info] Renamed to /home/pi/.vscode-server/extensions/ms-ceintl.vscode-language-pack-fr-1.82.2023091309
+2023-09-13 14:46:42.058 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:42.090 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:46:42.427 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-fr
+2023-09-13 14:51:28.796 [info] New EH opened, aborting shutdown

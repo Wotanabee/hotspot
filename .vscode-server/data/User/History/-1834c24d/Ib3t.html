@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Franck, Morgan, Anima Night">
+
+        {% block meta %}{% endblock %}
+        
+        <title>Anima Night - {{  title }}</title>
+        <!--Bootstrap 4.5.2-->
+        <link rel="stylesheet" href="{% static 'shazam/css/bootstrap.min.css'%}">
+        
+        {% block style %}{% endblock %}
+
+        <!--Fontawesome 6-->
+        <script src="https://kit.fontawesome.com/b1d38ac9c9.js" crossorigin="anonymous"></script>
+        <!--/Fontawesome 6 -->       
+        <script src="{% static 'shazam/js/script.js' %}"></script>
+
+        {% block script %}{% endblock %}
+    </head>
+    <body>   
+        {% block content %}{% endblock %}
+
+        <footer>
+            <p class="text-muted text-center"><small>{% now "d F Y H\hi" %}</small></p>
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2023 Copyright Anima Night</p>
+        </footer>
+        <script src="{% static 'shazam/js/jquery-3.7.0.min.js' %}"></script>
+        <script src="{% static 'shazam/js/bootstrap.bundle.min.js' %}"></script>
+        
+        {% block javascript %}{% endblock %}        
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip({
+                    animation: true,
+                    delay: {show:200, hide:300},
+                    html: true
+                });
+            });
+        </script>
+    </body>
+</html>

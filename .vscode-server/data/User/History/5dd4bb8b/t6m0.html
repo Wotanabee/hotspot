@@ -1,0 +1,47 @@
+{% extends "hotspot/base.html" %}
+
+{% load static %}
+
+{% block metaname%}
+    <meta http-equiv="refresh" content="10">
+{% endblock%}
+
+{% block content %}
+  <main role="main" class="container">
+    <!--Container-->
+    <div class="container mt-4" style="max-width:1400px;">
+      <div class="rounded shadow-sm">
+        <div class="text-center mb-12">  
+            <img src="{% static 'shazam/img/logo12.png' %}" width="302" height="96" alt="anima night logo"><br>
+            <img src="{% static 'shazam/img/hotspot_wifi.png' %}" alt="" width="72" height="72"><br>
+            <h6>Liste des demandes en attente - <a href="/wiforama/listing/">Wiforama</a></h6>
+        </div>
+     <!--Table PlayList-->
+     <table class="table table-striped">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Chanteur</th>
+                  <th scope="col">Chanson</th>
+                  <th scope="col">IP</th>
+                  <th scope="col"> </th>
+              </tr>
+          </thead>
+          <tbody>
+            {% for artiste in artistes%}
+            <tr>
+                <th scope="row">{{ artiste.id }}</th>
+                <td>{{ artiste.unixtime|date:"H\hi" }}</td>
+                <td>{{ artiste.artiste|title }}</td>
+                <td>{{ artiste.titre|title }}</td>
+                <td>{{ artiste.ipaddress }}</td>
+<!--                <td><a href="?delete={{ artiste.id }}"><img src="{% static 'shazam/img/trash.png' %}" alt="Supprimer" width="20" height="20" onclick="return confirmation();"></a></td>-->
+                <td><a href="?delete={{ artiste.id }}"><img src="{% static 'shazam/img/trash.png' %}" alt="Supprimer" width="20" height="20"></a></td>                
+            </tr>
+            {% endfor %}            
+        </tbody>       
+    </table>
+</main>
+{% endblock %}

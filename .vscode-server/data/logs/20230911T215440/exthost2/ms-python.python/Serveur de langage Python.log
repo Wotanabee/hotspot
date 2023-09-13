@@ -1,0 +1,16 @@
+2023-09-11 21:57:32.152 [info] [Info  - 21:57:32] (3497) Pylance language server 2023.9.10 (pyright c70adefc) starting
+2023-09-11 21:57:32.152 [info] [Info  - 21:57:32] (3497) Server root directory: /home/pi/.vscode-server/extensions/ms-python.vscode-pylance-2023.9.10/dist
+2023-09-11 21:57:32.153 [info] [Info  - 21:57:32] (3497) Starting service instance "hotspot"
+2023-09-11 21:57:32.407 [info] [Info  - 21:57:32] (3497) Setting pythonPath for service "hotspot": "/usr/bin/python3"
+2023-09-11 21:57:32.408 [info] [Info  - 21:57:32] (3497) Setting pythonPath for service "hotspot": "/usr/bin/python3"
+2023-09-11 21:57:32.409 [info] [Warn  - 21:57:32] (3497) stubPath /home/pi/hotspot/typings is not a valid directory.
+2023-09-11 21:57:32.510 [info] [Info  - 21:57:32] (3497) Assuming Python version 3.9
+2023-09-11 21:57:32.786 [info] [Info  - 21:57:32] (3497) Found 25 source files
+2023-09-11 21:57:38.886 [info] [Info  - 21:57:38] (3497) [BG(1)] Long operation: analyzing: /home/pi/hotspot/hotspot/settings.py (3052ms)
+2023-09-11 21:57:39.094 [info] [Info  - 21:57:39] (3497) [IDX(2)] Long operation: scan packages /home/pi/hotspot (2738ms)
+2023-09-11 21:57:42.815 [info] [Info  - 21:57:42] (3497) [IDX(2)] Long operation: index execution environment /home/pi/hotspot (2692ms)
+2023-09-11 21:57:42.815 [info] [Info  - 21:57:42] (3497) [IDX(2)] Long operation: index packages /home/pi/hotspot (2775ms)
+2023-09-11 22:10:23.680 [info] [Info  - 22:10:23] (3497) Found 26 source files
+2023-09-11 22:10:47.134 [info] [Info  - 22:10:47] (3497) Found 26 source files
+2023-09-11 22:10:52.840 [info] [Info  - 22:10:52] (3497) Found 26 source files
+2023-09-11 22:20:53.170 [info] [Info  - 22:20:53] (3497) Found 25 source files

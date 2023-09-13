@@ -1,0 +1,11 @@
+2023-09-13 14:46:41.189 [info] [Info  - 14:46:41] (11146) Pylance language server 2023.9.10 (pyright c70adefc) starting
+2023-09-13 14:46:41.190 [info] [Info  - 14:46:41] (11146) Server root directory: /home/pi/.vscode-server/extensions/ms-python.vscode-pylance-2023.9.10/dist
+2023-09-13 14:46:41.191 [info] [Info  - 14:46:41] (11146) Starting service instance "hotspot"
+2023-09-13 14:46:41.546 [info] [Info  - 14:46:41] (11146) Setting pythonPath for service "hotspot": "/usr/bin/python3"
+2023-09-13 14:46:41.554 [info] [Info  - 14:46:41] (11146) Setting pythonPath for service "hotspot": "/usr/bin/python3"
+2023-09-13 14:46:41.555 [info] [Warn  - 14:46:41] (11146) stubPath /home/pi/hotspot/typings is not a valid directory.
+2023-09-13 14:46:41.666 [info] [Info  - 14:46:41] (11146) Assuming Python version 3.9
+2023-09-13 14:46:42.042 [info] [Info  - 14:46:42] (11146) Found 25 source files
+2023-09-13 14:46:48.193 [info] [Info  - 14:46:48] (11146) [BG(1)] Long operation: checking: /home/pi/hotspot/wiforama/views.py (2330ms)
+2023-09-13 14:46:48.194 [info] [Info  - 14:46:48] (11146) [BG(1)] Long operation: analyzing: /home/pi/hotspot/wiforama/views.py (2384ms)
+2023-09-13 14:46:48.890 [info] [Info  - 14:46:48] (11146) [IDX(2)] Long operation: scan packages /home/pi/hotspot (2100ms)
